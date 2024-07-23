@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Box with Image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="message-box">
+        <img src="https://iili.io/HPz3fFn.png" alt="Image" class="message-image">
+        <p>Ask Me a Question</p>
+        <input placeholder="Enter your Message" id="message">
+        <button onclick="accept()">Accept</button>
+        <button onclick="dec()">Decline</button>
+    </div>
+    <script>
+       function accept(){
+        let message = document.getElementById("message");
+      let value = message.value;
+        if(value=='')
+        {
+       alert('it should not be empty');
+        }
+        else if(value =='guhan' || value== 'what is your name' | value == '')
+        {
+          alert('Your Question is submitted')
+          message.innerText('')
+        }
+        else{
+          alert('Ivalid Question');
+        }
+       }
+       function dec(){
+        alert('your question is not submited');
+       }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
